@@ -15,6 +15,13 @@ const resolvers = {
     },
 
     Mutaions: {
-
+    
+              addUser: (_, { username, email, password }) => {
+                const { token, user } = addUserFunction(username, email, password);
+                return {
+                  token,
+                  user,
+                };
+              },
     }
 }
