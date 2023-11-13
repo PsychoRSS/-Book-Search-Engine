@@ -78,7 +78,7 @@ const SearchBooks = () => {
     }
     
     try {
-    const response = await saveBookMutation({
+    const response = await saveBook({
       variables: { input: bookToSave },
       context: { headers: { Authorization: `Bearer ${token}` } },
     });
