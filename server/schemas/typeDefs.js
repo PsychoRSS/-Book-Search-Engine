@@ -40,4 +40,6 @@ type Mutation {
     saveBook(input: bookInput!): User
     removeBook(bookId: ID): User 
 }
-`
+`;
+
+module.exports = typeDefs;
